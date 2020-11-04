@@ -31,10 +31,16 @@
     d
 
     devicePixelRatio = PR/PV -->
-
+<!-- 
     <h2>SRCSET</h2>
     <img srcset="img/eren.jpg 2x, img/moto.png 4x"
         src="img/portafolio.svg"    
-    >
+    > -->
+<picture>
+    <source srcset="img/moto.png" media="(min-width: 800px")>
+    <source srcset="img/eren.jpg" media="(min-width: 400px")>
+    <img src="img/portafolio.svg" alt="">
+</picture>
+
 </body>
 </html>
