@@ -33,6 +33,10 @@
         tbody las demas filas
         tfoot  como resumen de la tabla
 
+        atributos para agrupacion de filas y columnas
+        colspan=N
+        rowspan=N
+
     -->
     <table>
         <caption>Horario de clases</caption>
@@ -42,17 +46,16 @@
                 <th>Martes</th>
                 <th>Miercoles</th>
                 <th>Jueves</th>
-                <th>Vierbes</th>
+                <th>Viernes</th>
             </tr>
         </thead>
 
         <tbody>
             <tr>
-                <td>HTML</td>
+                <td colspan=2>HTML</td>
                 <td>CSS</td>
                 <td>JS</td>
-                <td>Django</td>
-                <td>VueJs</td>
+                <td rowspan=2>Django</td>
             </tr>
 
             <tr>
@@ -60,17 +63,14 @@
                 <td>ED</td>
                 <td>diseño</td>
                 <td>figma</td>
-                <td>java</td>
             </tr>
         </tbody>
 
         <tfoot>
             <tr>
+                <td colspan="4">Total</td>
                 <td>2 Cursos</td>
-                <td>2 Cursos</td>
-                <td>2 Cursos</td>
-                <td>2 Cursos</td>
-                <td>2 Cursos</td>
+
             </tr>
         </tfoot>
 
