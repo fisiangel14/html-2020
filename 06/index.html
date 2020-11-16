@@ -20,6 +20,18 @@
             background: #333;
             color: #fff;
         }
+
+        caption {
+            padding-bottom: .5em;
+        }
+
+        .col-1 {
+            background: purple;
+        }
+
+        .col-5 {
+            background: rgb(12, 26, 220);
+        }
     </style>
 </head>
 
@@ -40,6 +52,11 @@
     -->
     <table>
         <caption>Horario de clases</caption>
+        <colgroup>
+            <col class="col-1">
+            <col span=3>
+            <col class="col-5">
+        </colgroup>
         <thead>
             <tr>
                 <th>Lunes</th>
@@ -55,7 +72,8 @@
                 <td colspan=2>HTML</td>
                 <td>CSS</td>
                 <td>JS</td>
-                <td rowspan=2>Django</td>
+                <td>Django</td>
+
             </tr>
 
             <tr>
@@ -63,6 +81,7 @@
                 <td>ED</td>
                 <td>diseño</td>
                 <td>figma</td>
+                <td>UX Desing</td>
             </tr>
         </tbody>
 
