@@ -10,9 +10,15 @@
             border-collapse: collapse;
         }
 
-        td {
+        td,
+        th {
             border: 1px solid;
-            padding: 5em;
+            padding: .5em;
+        }
+
+        th {
+            background: #333;
+            color: #fff;
         }
     </style>
 </head>
@@ -22,31 +28,51 @@
         table para indicar que es una tabla
         tr    para indicar filas
         td    para inidcar columnas o celdad en cada fila
+        th   cabecera para table
+        thead la cabecera
+        tbody las demas filas
+        tfoot  como resumen de la tabla
+
     -->
     <table>
-        <tr>
-            <td>Lunes</td>
-            <td>Martes</td>
-            <td>Miercoles</td>
-            <td>Jueves</td>
-            <td>Vierbes</td>
-        </tr>
+        <caption>Horario de clases</caption>
+        <thead>
+            <tr>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miercoles</th>
+                <th>Jueves</th>
+                <th>Vierbes</th>
+            </tr>
+        </thead>
 
-        <tr>
-            <td>HTML</td>
-            <td>CSS</td>
-            <td>JS</td>
-            <td>Django</td>
-            <td>VueJs</td>
-        </tr>
+        <tbody>
+            <tr>
+                <td>HTML</td>
+                <td>CSS</td>
+                <td>JS</td>
+                <td>Django</td>
+                <td>VueJs</td>
+            </tr>
 
-        <tr>
-            <td>Python</td>
-            <td>ED</td>
-            <td>diseño</td>
-            <td>figma</td>
-            <td>java</td>
-        </tr>
+            <tr>
+                <td>Python</td>
+                <td>ED</td>
+                <td>diseño</td>
+                <td>figma</td>
+                <td>java</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>2 Cursos</td>
+                <td>2 Cursos</td>
+                <td>2 Cursos</td>
+                <td>2 Cursos</td>
+                <td>2 Cursos</td>
+            </tr>
+        </tfoot>
 
     </table>
 </body>
