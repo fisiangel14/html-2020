@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forumulario</title>
+    <style>
+        div {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<h1>Dejanos tus sugerencias</h1>
+<!--
+    Formularios
+    form -- con esto se inicia el formualrio
+    input -- son las etiquetas para poder  ingresar datos
+    button -- es para poder enviar esos datos
+
+    atributos
+    action -- a donde enviara los datos
+    placeholder -- es un texto de ayuda en los inputs
+    textarea -- para poder escribir mas texto
+    name en cada elemento es muy IMPORTANTE!!!!
+
+    tipos de input
+    submit para enviar datos como button
+
+-->
+
+<body>
+    <form action="form.html">
+        <div>
+            <input placeholder="Tu nombre" name="username">
+        </div>
+        <div>
+            <input placeholder="Tu correo" name="email">
+        </div>
+        <div>
+            <textarea id="" cols="50" rows="20" placeholder="Dejanos un mensaje" name="message"></textarea>
+        </div>
+        <!-- <button>Enviar</button> -->
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+
+</html>
