@@ -19,6 +19,9 @@
     input -- son las etiquetas para poder  ingresar datos
     button -- es para poder enviar esos datos
     label  -- para poder relacionar con los inputs
+    fieldset  para poner un marco a un bloque
+    legend -- para poner un titulo a es bloque de codigo
+
 
     atributos
     action -- a donde enviara los datos
@@ -106,6 +109,68 @@
                     <input type="range" min="5" max="100" step="3">
                 </label>
             </div>
+        </fieldset>
+        <fieldset>
+            <legend>Opciones de seleccion(Se puede seleccionar mas de una)</legend>
+            <div>
+                <label>
+                    <input type="checkbox" name="aficciones" value=cine>
+                    Cine
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="checkbox" name="aficciones" value="musica">
+                    Musica
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="checkbox" name="aficciones" value="comida">
+                    Comida
+                </label>
+            </div>
+
+        </fieldset>
+        <fieldset>
+            <legend>Radio button</legend>
+            <div>
+                <label >
+                    <input type="radio" name="gender">
+                    Hombre
+                </label>
+            </div>
+            <div>
+                <label >
+                    <input type="radio" name="gender">
+                    Mujer
+                </label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Selecciona tu Pais</legend>
+            <select name="country" id="">
+                <optgroup label="Sudamerica">
+                    <option value="PE">Péru</option>
+                    <option value="CO">COLOMBIA</option>
+                    <option value="BOL">BOLIVIA</option>
+                </optgroup>
+                <optgroup label="Norteamerica">
+                    <option value="MX">MEXICO</option>
+                </optgroup>
+                
+            </select>
+        </fieldset>
+        <fieldset>
+            <input type="list" list="country-list">
+            <datalist id="country-list">
+                <option value="PERU"></option>
+                <option value="ECUADOR"></option>
+                <option value="BRAZIL"></option>
+                <option value="ARGENTINA"></option>
+                <option value="VENEZUELA"></option>
+            </datalist>
         </fieldset>
         
         <!-- <button>Enviar</button> -->
