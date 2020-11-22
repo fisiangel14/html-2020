@@ -26,6 +26,13 @@
     atributos
     action -- a donde enviara los datos
     placeholder -- es un texto de ayuda en los inputs
+    type -- tipo de input
+    required -- hace que el input sea obligatorio
+    readonly -- para que el value no se modifique
+    autocomplete="on|off"  -- Para form
+    checked -- para checkbox y radio
+    selected -- para select
+
     textarea -- para poder escribir mas texto
     name en cada elemento es muy IMPORTANTE!!!!
     for - se realcioa con el id del input
@@ -42,12 +49,12 @@
             <legend>Datos Personales</legend>
             <div>
                 <label >Cual es tu nombre?
-                    <input id="username"  name="username">
+                    <input id="username"  name="username" value="fisiangel.14@gmail.com" readonly>
                 </label>
             </div>
             <div>
                 <label for="email">Tu correo</label>
-                <input id="label"  name="email">
+                <input id="label"  name="email" required>
             </div>
 
         </fieldset>
@@ -114,7 +121,7 @@
             <legend>Opciones de seleccion(Se puede seleccionar mas de una)</legend>
             <div>
                 <label>
-                    <input type="checkbox" name="aficciones" value=cine>
+                    <input checked type="checkbox" name="aficciones" value=cine>
                     Cine
                 </label>
             </div>
@@ -136,7 +143,7 @@
             <legend>Radio button</legend>
             <div>
                 <label >
-                    <input type="radio" name="gender">
+                    <input checked type="radio" name="gender">
                     Hombre
                 </label>
             </div>
@@ -152,7 +159,7 @@
             <legend>Selecciona tu Pais</legend>
             <select name="country" id="">
                 <optgroup label="Sudamerica">
-                    <option value="PE">Péru</option>
+                    <option selected value="PE">Péru</option>
                     <option value="CO">COLOMBIA</option>
                     <option value="BOL">BOLIVIA</option>
                 </optgroup>
